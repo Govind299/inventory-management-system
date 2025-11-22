@@ -47,7 +47,7 @@ export default function LoginPage() {
       showToast({ message: 'Login successful! Welcome back.', type: 'success' });
       router.push('/dashboard');
     } else {
-      showToast({ message: 'Invalid email or password. Try admin@example.com / admin123', type: 'error' });
+      showToast({ message: 'Invalid email or password.', type: 'error' });
       setErrors({ password: 'Invalid credentials' });
     }
   };
@@ -122,15 +122,6 @@ export default function LoginPage() {
                 Sign up
               </a>
             </p>
-          </div>
-        </div>
-
-        {/* Demo Credentials */}
-        <div className="mt-6 p-4 bg-primary-light border border-primary/20 rounded-lg">
-          <p className="text-sm font-medium text-primary mb-2">Demo Credentials</p>
-          <div className="space-y-1 text-xs text-text-secondary">
-            <p><strong>Admin:</strong> admin@example.com / admin123</p>
-            <p><strong>User:</strong> user@example.com / user123</p>
           </div>
         </div>
 
