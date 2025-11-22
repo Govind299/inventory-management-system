@@ -1,0 +1,441 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "sku": "PROD-001",
+      "name": "Industrial Bolt M12",
+      "description": "High-strength steel bolt",
+      "categoryId": "cat-1",
+      "category": "Fasteners",
+      "unit": "pcs",
+      "reorderPoint": 100,
+      "reorderQuantity": 500,
+      "totalStock": 450,
+      "availableStock": 400,
+      "reservedStock": 50,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "sku": "PROD-015",
+      "name": "Steel Plate 10mm",
+      "description": "Carbon steel plate 1000x2000mm",
+      "categoryId": "cat-2",
+      "category": "Raw Materials",
+      "unit": "pcs",
+      "reorderPoint": 50,
+      "reorderQuantity": 100,
+      "totalStock": 125,
+      "availableStock": 100,
+      "reservedStock": 25,
+      "createdAt": "2024-01-02T00:00:00Z",
+      "updatedAt": "2024-01-14T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "sku": "PROD-032",
+      "name": "Hydraulic Hose 1/2\"",
+      "description": "High-pressure hydraulic hose",
+      "categoryId": "cat-3",
+      "category": "Hydraulics",
+      "unit": "meters",
+      "reorderPoint": 25,
+      "reorderQuantity": 100,
+      "totalStock": 120,
+      "availableStock": 115,
+      "reservedStock": 5,
+      "createdAt": "2024-01-03T00:00:00Z",
+      "updatedAt": "2024-01-16T00:00:00Z"
+    },
+    {
+      "sku": "TEST-ADMIN-001",
+      "name": "Admin Test Product",
+      "description": "testing admin access",
+      "categoryId": "cat-1",
+      "category": "Fasteners",
+      "unit": "pcs",
+      "reorderPoint": 50,
+      "reorderQuantity": 200,
+      "totalStock": 150,
+      "availableStock": 150,
+      "reservedStock": 0,
+      "id": "PROD-1763806124265",
+      "createdAt": "2025-11-22T10:08:44.265Z",
+      "updatedAt": "2025-11-22T10:08:44.265Z"
+    }
+  ],
+  "receipts": [
+    {
+      "id": "1",
+      "documentNumber": "RCP-2024-001",
+      "supplierName": "ABC Suppliers Inc.",
+      "warehouseId": "WH-001",
+      "warehouseName": "Main Warehouse",
+      "status": "pending",
+      "expectedDate": "2024-11-25",
+      "receivedDate": null,
+      "lines": [
+        {
+          "id": "1",
+          "productId": "1",
+          "productName": "Industrial Bolt M12",
+          "sku": "PROD-001",
+          "expectedQuantity": 500,
+          "receivedQuantity": 0,
+          "unit": "pcs"
+        }
+      ],
+      "createdBy": "Admin User",
+      "createdAt": "2024-11-20T10:00:00Z"
+    },
+    {
+      "id": "RCP-1763806386593",
+      "documentNumber": "RCP-2024-593",
+      "supplierName": "Test Supplier",
+      "warehouseId": "WH-001",
+      "warehouseName": "Main Warehouse",
+      "status": "done",
+      "expectedDate": "2025-11-23",
+      "receivedDate": "2025-11-22T10:13:22.298Z",
+      "lines": [
+        {
+          "id": "line-0",
+          "productId": "PROD-1763806124265",
+          "productName": "Admin Test Product",
+          "sku": "TEST-ADMIN-001",
+          "expectedQuantity": 100
+        }
+      ],
+      "createdBy": "Admin User",
+      "createdAt": "2025-11-22T10:13:06.593Z"
+    },
+    {
+      "id": "RCP-1763808288445",
+      "documentNumber": "RCP-2024-445",
+      "supplierName": "user test suplier ",
+      "warehouseId": "WH-001",
+      "warehouseName": "Main Warehouse",
+      "status": "done",
+      "expectedDate": "2025-11-23",
+      "receivedDate": "2025-11-22T10:45:29.822Z",
+      "lines": [
+        {
+          "id": "line-0",
+          "productId": "PROD-1763806124265",
+          "productName": "Admin Test Product",
+          "sku": "TEST-ADMIN-001",
+          "expectedQuantity": 50
+        }
+      ],
+      "createdBy": "Admin User",
+      "createdAt": "2025-11-22T10:44:48.445Z"
+    }
+  ],
+  "deliveries": [
+    {
+      "documentNumber": "DEL-2024-001",
+      "customerId": "CUST-1",
+      "customerName": "test customer inc ",
+      "warehouseId": "WH-001",
+      "warehouseName": "Main Warehouse",
+      "status": "draft",
+      "orderDate": "2025-11-22",
+      "expectedDeliveryDate": "2025-11-23",
+      "lines": [
+        {
+          "id": "1",
+          "productId": "PROD-1763806124265",
+          "productName": "Admin Test Product",
+          "sku": "TEST-ADMIN-001",
+          "orderedQty": 10,
+          "pickedQty": 0,
+          "packedQty": 0,
+          "unit": "pcs"
+        }
+      ],
+      "totalItems": 1,
+      "notes": "",
+      "createdBy": "Current User",
+      "createdAt": "2025-11-22T10:33:59.367Z",
+      "id": 1
+    },
+    {
+      "documentNumber": "DEL-2024-002",
+      "customerId": "CUST-2",
+      "customerName": "user test customer ",
+      "warehouseId": "WH-001",
+      "warehouseName": "Main Warehouse",
+      "status": "draft",
+      "orderDate": "2025-11-22",
+      "expectedDeliveryDate": "2025-11-23",
+      "lines": [
+        {
+          "id": "1",
+          "productId": "PROD-1763806124265",
+          "productName": "Admin Test Product",
+          "sku": "TEST-ADMIN-001",
+          "orderedQty": 5,
+          "pickedQty": 0,
+          "packedQty": 0,
+          "unit": "pcs"
+        }
+      ],
+      "totalItems": 1,
+      "notes": "",
+      "createdBy": "Current User",
+      "createdAt": "2025-11-22T10:49:06.030Z",
+      "id": 2
+    }
+  ],
+  "transfers": [
+    {
+      "documentNumber": "TRF-2024-001",
+      "fromWarehouseId": "WH-001",
+      "fromWarehouseName": "Main Warehouse",
+      "toWarehouseId": "WH-002",
+      "toWarehouseName": "Regional Warehouse",
+      "status": "scheduled",
+      "requestDate": "2025-11-22",
+      "scheduledDate": "2025-11-23",
+      "lines": [
+        {
+          "id": "1",
+          "productId": "PROD-1763806124265",
+          "productName": "Admin Test Product",
+          "sku": "TEST-ADMIN-001",
+          "requestedQty": 20,
+          "shippedQty": 0,
+          "receivedQty": 0,
+          "unit": "pcs"
+        }
+      ],
+      "totalItems": 1,
+      "notes": "",
+      "createdBy": "Current User",
+      "createdAt": "2025-11-22T10:38:54.959Z",
+      "id": 1
+    }
+  ],
+  "adjustments": [
+    {
+      "documentNumber": "ADJ-2024-001",
+      "warehouseId": "WH-001",
+      "warehouseName": "Main Warehouse",
+      "type": "cycle_count",
+      "status": "approved",
+      "adjustmentDate": "2025-11-23",
+      "lines": [
+        {
+          "id": "1",
+          "productId": "PROD-1763806124265",
+          "productName": "Admin Test Product",
+          "sku": "TEST-ADMIN-001",
+          "currentQty": 100,
+          "newQty": 95,
+          "adjustmentQty": -5,
+          "unit": "pcs",
+          "reason": "testign adminapproval workflow"
+        }
+      ],
+      "totalLines": 1,
+      "totalIncrease": 0,
+      "totalDecrease": 5,
+      "notes": "",
+      "createdBy": "Current User",
+      "createdAt": "2025-11-22T10:28:39.820Z",
+      "id": 1,
+      "approvedBy": "Current User",
+      "approvedAt": "2025-11-22T10:28:58.670Z"
+    },
+    {
+      "documentNumber": "ADJ-2024-002",
+      "warehouseId": "WH-001",
+      "warehouseName": "Main Warehouse",
+      "type": "cycle_count",
+      "status": "approved",
+      "adjustmentDate": "2025-11-22",
+      "lines": [
+        {
+          "id": "1",
+          "productId": "PROD-1763806124265",
+          "productName": "Admin Test Product",
+          "sku": "TEST-ADMIN-001",
+          "currentQty": 150,
+          "newQty": 145,
+          "adjustmentQty": -5,
+          "unit": "pcs",
+          "reason": "user testing waiting for admin approval"
+        }
+      ],
+      "totalLines": 1,
+      "totalIncrease": 0,
+      "totalDecrease": 5,
+      "notes": "",
+      "createdBy": "Current User",
+      "createdAt": "2025-11-22T10:47:16.074Z",
+      "id": 2,
+      "approvedBy": "Current User",
+      "approvedAt": "2025-11-22T10:47:45.352Z"
+    },
+    {
+      "documentNumber": "ADJ-2024-003",
+      "warehouseId": "WH-001",
+      "warehouseName": "Main Warehouse",
+      "type": "cycle_count",
+      "status": "approved",
+      "adjustmentDate": "2025-11-23",
+      "lines": [
+        {
+          "id": "1",
+          "productId": "PROD-1763806124265",
+          "productName": "Admin Test Product",
+          "sku": "TEST-ADMIN-001",
+          "currentQty": 150,
+          "newQty": 145,
+          "adjustmentQty": -5,
+          "unit": "pcs",
+          "reason": "weds"
+        }
+      ],
+      "totalLines": 1,
+      "totalIncrease": 0,
+      "totalDecrease": 5,
+      "notes": "",
+      "createdBy": "Current User",
+      "createdAt": "2025-11-22T10:58:49.513Z",
+      "id": 3,
+      "approvedBy": "Current User",
+      "approvedAt": "2025-11-22T11:06:07.624Z"
+    }
+  ],
+  "ledgerEntries": [
+    {
+      "id": "1",
+      "productId": "1",
+      "productName": "Industrial Bolt M12",
+      "sku": "PROD-001",
+      "locationId": "loc-1",
+      "locationName": "Zone A - Rack 1",
+      "documentType": "receipt",
+      "documentNumber": "RCP-2024-001",
+      "quantity": 500,
+      "balanceAfter": 950,
+      "createdAt": "2024-11-15T10:00:00Z",
+      "createdBy": "Admin User"
+    },
+    {
+      "id": "2",
+      "productId": "1",
+      "productName": "Industrial Bolt M12",
+      "sku": "PROD-001",
+      "locationId": "loc-1",
+      "locationName": "Zone A - Rack 1",
+      "documentType": "delivery",
+      "documentNumber": "DEL-2024-045",
+      "quantity": -50,
+      "balanceAfter": 900,
+      "createdAt": "2024-11-15T14:00:00Z",
+      "createdBy": "Admin User"
+    },
+    {
+      "id": "ledger-1763806402331-zjt100csl",
+      "productId": "PROD-1763806124265",
+      "productName": "Admin Test Product",
+      "sku": "TEST-ADMIN-001",
+      "locationId": "WH-001",
+      "locationName": "Main Warehouse",
+      "documentType": "receipt",
+      "documentNumber": "RCP-2024-593",
+      "quantity": 100,
+      "balanceAfter": 100,
+      "createdAt": "2025-11-22T10:13:22.331Z",
+      "createdBy": "Current User"
+    },
+    {
+      "id": "ledger-1763808329885-1dg85b0rh",
+      "productId": "PROD-1763806124265",
+      "productName": "Admin Test Product",
+      "sku": "TEST-ADMIN-001",
+      "locationId": "WH-001",
+      "locationName": "Main Warehouse",
+      "documentType": "receipt",
+      "documentNumber": "RCP-2024-445",
+      "quantity": 50,
+      "balanceAfter": 150,
+      "createdAt": "2025-11-22T10:45:29.885Z",
+      "createdBy": "Current User"
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "WH-001",
+      "name": "Main Warehouse",
+      "code": "WH-001",
+      "address": "123 Industrial Avenue",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "zip": "400001",
+      "status": "active",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "WH-002",
+      "name": "Regional Warehouse",
+      "code": "WH-002",
+      "address": "456 Commerce Street",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "zip": "411001",
+      "status": "active",
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User1",
+      "email": "admin@example.com",
+      "role": "Administrator"
+    },
+    {
+      "id": "2",
+      "email": "user@example.com",
+      "password": "user123",
+      "name": "Regular User",
+      "role": "user",
+      "permissions": [
+        "view_products",
+        "view_receipts",
+        "view_deliveries",
+        "view_transfers",
+        "view_ledger",
+        "create_receipt",
+        "validate_receipt"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Fasteners",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "cat-2",
+      "name": "Raw Materials",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "cat-3",
+      "name": "Hydraulics",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "cat-4",
+      "name": "Electronics",
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  ]
+}
